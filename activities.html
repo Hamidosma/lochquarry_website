@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities | Lochquarry Outdoor Centre</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="css/activities.css">
+</head>
+
+<body>
+
+<header>
+        <img src="lochquarry_photographs/LogoAndBanner/lochquarry_banner.png" alt="Lochquarry Outdoor Centre Banner" class="banner">
+
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="staff.html">Our Staff</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Lochquarry Outdoor Centre Activities</h1>
+
+</header>
+
+<main>
+
+    <section>
+        <h2>Land-Based Activities</h2>
+
+         <h3>Gallery</h3>
+         <div class="gallery">
+            <img src="lochquarry_photographs/activities/land/axe_1.jpg" alt="Axe Throwing image" class="page-image">
+            <img src="lochquarry_photographs/activities/land/axe_2.jpg" alt="Axe Throwing image" class="page-image">
+            <img src="lochquarry_photographs/activities/land/archery_2.jpg" alt="Archery image" class="page-image">
+            <img src="lochquarry_photographs/activities/land/hillwalking_1.jpg" alt="Hillwalking image" class="page-image">
+            <img src="lochquarry_photographs/activities/land/hillwalking_3.jpg" alt="Hillwalking image" class="page-image">
+            <img src="lochquarry_photographs/activities/land/orienteering_1.jpg" alt="Orienteering image" class="page-image">
+            <img src="lochquarry_photographs/activities/land/orienteering_2.jpg" alt="Orienteering image" class="page-image">
+        </div>
+
+
+        <p>
+            Visitors can take part in a wide range of land-based activities on and off site including hillwalking, archery, orienteering and axe throwing.
+        </p>
+
+        <ul>
+            <li>Hillwalking - Ages 6+</li>
+            <li>Archery - Ages 6+</li>
+            <li>Orienteering - Ages 6+</li>
+            <li>Axe Throwing - Ages 10+</li>
+        </ul>
+         </section>
+
+    <section>
+        <h2>Water-Based Activities</h2>
+
+        <h3>Gallery</h3>
+        <div class="gallery">
+            <img src="lochquarry_photographs/activities/water/kayaking_1.jpg" alt="Kayaking image" class="page-image">
+            <img src="lochquarry_photographs/activities/water/kayaking_2.jpg" alt="Kayaking image" class="page-image">
+            <img src="lochquarry_photographs/activities/water/kayaking_3.jpg" alt="Kayaking image" class="page-image">
+            <img src="lochquarry_photographs/activities/water/powerboating_1.jpg" alt="Powerboating image" class="page-image">
+            <img src="lochquarry_photographs/activities/water/powerboating_2.jpg" alt="Powerboating image" class="page-image">
+        </div>
+
+
+        <p>
+            Water-based activities all take place on Lochquarry itself and include kayaking, canoeing and powerboating.
+        </p>
+
+        <ul>
+            <li>Kayaking - Ages 8+</li>
+            <li>Canoeing - Ages 6+</li>
+            <li>Powerboating - Ages 12+</li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h2>Rope-Based Activities</h2>
+
+        <h3>Gallery</h3>
+        <div class="gallery">
+            <img src="lochquarry_photographs/activities/rope/abseiling_1.jpg" alt="Abseiling image" class="page-image">
+            <img src="lochquarry_photographs/activities/rope/abseiling_2.jpg" alt="Abseiling image" class="page-image">
+            <img src="lochquarry_photographs/activities/rope/climbing_1.jpg" alt="Climbing image" class="page-image">
+            <img src="lochquarry_photographs/activities/rope/climbing_2.jpg" alt="Climbing image" class="page-image">
+            <img src="lochquarry_photographs/activities/rope/climbing_3.jpg" alt="Climbing image" class="page-image">
+            <img src="lochquarry_photographs/activities/rope/pole_climb_2.jpg" alt="pole climbing image" class="page-image">
+        </div>
+
+
+        <p>
+            Rope-based activities take place on site with full safety equipment provided.
+        </p>
+
+        <ul>
+            <li>Climbing - Ages 8+</li>
+            <li>Abseiling - Ages 8+</li>
+            <li>Pole Climb - Ages 8+</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Customer Review</h2>
+
+        <blockquote>
+            “The archery was brilliant, but not as good as axe throwing!” - Scott, aged 13
+        </blockquote>
+    </section>
+
+    <section>
+        <h2>External Link</h2>
+
+        <a href="https://www.scouts.org.uk" target="_blank">Visit the Scouts Website</a>
+    </section>
+
+</main>
+
+
+
+<p><!--these are the latest added stuff(#5)-->
+<button onclick="countActivities()">
+    View Total Activities
+</button>
+<!--these are the latest added stuff(#5)--></p>
+
+
+<p>
+    <!--these are the latest added stuff (#1)-->
+<button onclick="changeBackground()">
+    Change Background Colour
+</button>
+<!--these are the latest added stuff(#1)-->
+</p>
+
+
+<footer>
+    <p>© 2026 Lochquarry Outdoor Centre. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+<!-- Gallery images Script -->
+<script>
+document.querySelectorAll(".gallery img").forEach(img=>{
+    img.onclick=(e)=>{
+        e.stopPropagation();
+        img.classList.toggle("active");
+    }
+});
+
+document.onclick=()=>{
+    document.querySelectorAll(".gallery img")
+    .forEach(img=>img.classList.remove("active"));
+}
+</script>
+<!-- end of Gallery images Script -->
+
+</body>
+</html>
+    

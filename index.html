@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lochquarry Outdoor Centre</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="lochquarry_photographs/LogoAndBanner/lochquarry_banner.png" alt="Lochquarry Outdoor Centre Banner" class="banner">
+
+
+        <nav>
+            <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="staff.html">Our Staff</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="About.html">About us</a>
+                    <a href="Activities.html">Center Activies</a>
+                    <a href="index.html">Book Now</a>
+                    <a href="staff.html">Staff</a>
+                    <a href="contact.html">Career</a>
+                    <a href="contact.html">Contact us</a>
+                    </div>
+            </div>
+        </nav>
+        
+    
+        <h1>LOCHQUARRY OUTDOOR CENTRE</h1>
+            
+    </header>
+
+        <main>
+
+        <section>
+            <h2>Welcome to Lochquarry Outdoor Centre</h2>
+
+            <p>
+                Located in the heart of the beautiful Argyll hills, Lochquarry Outdoor Centre offers exciting outdoor adventures for young people aged 6-18.
+            </p>
+
+            <p>
+                From hillwalking and archery to kayaking and climbing, there is something for everyone to enjoy. Our experienced instructors provide safe, fun and challenging activities designed for all abilities and experience levels.
+            </p>
+
+             <p>
+                Whether you are visiting with a school group, Scouts, Guides or friends, Lochquarry Outdoor Centre is the perfect place to explore the outdoors, build confidence and create unforgettable memories.
+            </p>
+        </section>
+
+        <section>
+            <h2>Activities at Lochquarry</h2>
+
+            <p>We offer a wide range of exciting outdoor activities including:</p>
+
+            <ul>
+                <li>Land-based activities</li>
+                <li>Water-based activities</li>
+                <li>Rope-based activities</li>
+            </ul>
+
+                        <div class="image-gallery">
+                <img src="lochquarry_photographs/nature/TheBridge_img_1.jpg" alt="Bridge over peaceful river.">
+                <img src="lochquarry_photographs/nature/nature_2.jpg" alt="The Lakeside stone castle.">
+                <img src="lochquarry_photographs/nature/nature_1.jpg" alt="Forest woodland pathway.">
+                <img src="lochquarry_photographs/nature/nature_3.jpg" alt="Highland Cow">
+            
+            </div>
+        </section>
+
+
+    <!--these are the latest added stuff(#3)-->
+    <button onclick="toggleActivities()">
+        Show / Hide Booking Statstics
+    </button>
+
+<div id="extraActivities">
+    <!--add statsics pie/chart diagram here-->
+
+  <canvas id="myChart" width="400" height="200"></canvas>
+
+   <script>
+    const canvas = document.getElementById('myChart');
+    const context = canvas.getContext('2d');
+
+    const myChart = new Chart(context, {
+    type: 'bar',
+    data: {
+    labels: ['Hillwalking', 'Kayaking', 'Climbing'],
+    datasets: [{
+        label: 'Weekly Booking Statstics',
+        data: [49, 37, 43],
+        backgroundColor: ['Green', 'blue', '#440E03']
+    }]
+    }});
+
+   </script>
+
+    </div>
+
+
+    <!--these are the latest added stuff(#3)-->
+
+
+        <section>
+            <h2>Visitor Review</h2>
+
+            <blockquote>
+                “The kids had a ball and didn't want to leave” - Mr Evans, PE teacher
+            </blockquote>
+        </section>
+
+        <section>
+        
+            <h2>Book Your Adventure</h2>
+
+            <p> To book your next adventure at Lochquarry, please phone: </p>
+            <p class="phone-number">01475 229 8311</p>
+
+            <p> Or email:</p>
+            <p class="email">info@lochquarrycentre.co.uk</p>
+
+            <p class="Address">Address: Lochquarry Outdoor Centre, 1 Benmore, Dunoon, Scotland, PA23 8QU.</p>
+        
+        </section>
+        
+
+        
+    <p><button onclick="scrollToTop()" id="topButton">Back to Top</button></p>
+
+
+    </main>
+
+
+    <!--these are the latest added stuff(#2)-->
+    <button onclick="showDateTime()">
+        Show Date & Time
+    </button>
+
+    <p id="dateTime"></p>
+    <!--these are the latest added stuff(#2)-->
+
+
+
+    <p>
+        <!--these are the latest added stuff (#1)-->
+    <button onclick="changeBackground()">
+        Change Background Colour
+    </button>
+    <!--these are the latest added stuff(#1)-->
+    </p>
+
+<!-- footer -->
+
+    <footer>
+        © 2026 Lochquarry Outdoor Centre. All Rights Reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+
+
+
+
+</body>
+</html>
